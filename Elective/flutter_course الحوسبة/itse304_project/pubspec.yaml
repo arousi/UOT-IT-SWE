@@ -39,11 +39,18 @@ dependencies:
   shared_preferences: ^2.0.6
   crypto: ^3.0.1
   bcrypt: ^1.1.3
-
+  logger: ^2.5.0
+  go_router: ^14.8.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
+#flutter_icons:
+  #android: true
+  #ios: true
+  #image_path: "/lib/core/assets/icon/icon.png"
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
