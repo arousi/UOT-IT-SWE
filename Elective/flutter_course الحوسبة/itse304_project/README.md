@@ -1,6 +1,6 @@
 # ITSE304 Project - Cross-Platform Mobile Application
 
-![Flutter Logo](flutter_logo.jpg)
+![Flutter Logo](flutter_logo.jpg) ![Faculty of Information Tech LOGO](FacultyIcon.png)
 
 ## Overview
 
