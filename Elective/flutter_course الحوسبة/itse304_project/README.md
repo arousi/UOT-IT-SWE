@@ -1,8 +1,10 @@
 # ITSE304 Project - Cross-Platform Mobile Application
 
+![Flutter Logo](images/flutter_logo.png)
+
 ## Overview
 
-This Flutter project is a cross-platform mobile application developed as part of the ITSE304 course. It showcases a clean architecture, state management using BLoC, and implements user authentication and profile management features. The application is designed to run on both Android and iOS platforms.
+This Flutter project is a cross-platform mobile application developed as part of the ITSE304 course. It showcases a clean architecture, state management using Cubit, and implements user authentication and profile management features. The application is designed as a bone base for other projects.
 
 ## Features
 
@@ -13,13 +15,13 @@ This Flutter project is a cross-platform mobile application developed as part of
 -   **Profile Management:**
     -   View and update user profile information.
 -   **Navigation:**
-    -   Bottom navigation bar for easy access to different sections of the app.
--   **State Management:**
-    -   BLoC (Business Logic Component) pattern for managing application state.
--   **Cross-Platform Support:**
-    -   Designed to run seamlessly on both Android and iOS devices.
+    -   Bottom navigation bar implementing GoRouter for easy access to different sections of the app.
+-   **Cubit State Management:**
 -   **Local Data Persistence:**
     -   Utilizes SQLite for local data storage.
+-   **Logging:**
+    -   Comprehensive and Bueatiful logging using `Logger` for debugging and monitoring.
+-   **Session Token:** using Shared Preferences
 
 ## Architecture
 
@@ -52,6 +54,8 @@ The project follows a layered architecture to ensure separation of concerns and 
     -   Provides utilities for working with file paths.
 -   **shared_preferences:**
     -   For storing simple data.
+-   **Logger**
+    -   For beatufil Debug Console Logs.
 
 ## Getting Started
 
@@ -122,7 +126,7 @@ The project follows a layered architecture to ensure separation of concerns and 
 -   **Login:** Authenticate an existing user using email and password.
 -   **Logout:** Sign out the current user.
 
-### Navigation
+### Navigation using GoRouter
 
 -   **Home Screen:** The main screen of the app.
 -   **Profile Screen:** The user's profile screen to view and update information.
@@ -130,33 +134,7 @@ The project follows a layered architecture to ensure separation of concerns and 
 ### State Management
 
 -   **AuthCubit:** Manages authentication state (e.g., logged in, logged out).
--   **NavigationCubit:** Manages navigation state (e.g., current tab).
--   **ProfileCubit:** Manages profile state (e.g., user profile data).
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1.  Fork the repository.
-2.  Create a new branch:
-
-    ```sh
-    git checkout -b feature/your-feature
-    ```
-
-3.  Commit your changes:
-
-    ```sh
-    git commit -m 'Add some feature'
-    ```
-
-4.  Push to the branch:
-
-    ```sh
-    git push origin feature/your-feature
-    ```
-
-5.  Open a pull request.
+-   **ThemeCubit:** Manages Theme state.
 
 ## License
 
@@ -171,4 +149,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 
-For any inquiries, please contact arousi on GitHub.
+
+For any inquiries, please contact @arousi on GitHub or @LibyaChampion on tele.
