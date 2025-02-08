@@ -1,6 +1,6 @@
 # ITSE304 Project - Cross-Platform Mobile Application
 
-![Flutter Logo](flutter_logo.png)
+![Flutter Logo](flutter_logo.jpg)
 
 ## Overview
 
