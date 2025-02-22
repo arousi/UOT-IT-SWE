@@ -21,16 +21,6 @@ This Flutter project is a cross-platform mobile application developed as part of
     -   Utilizes SQLite for local data storage.
 -   **Logging:**
     -   Comprehensive and Bueatiful logging using `Logger` for debugging and monitoring.
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ![Logger logs](images/temp.png)
-
-=======
-    -   ![Logger Logs](images/temp.png)
->>>>>>> d254f13a4430edc60d780984858f8b686ec38761
-=======
-    -   ![Logger Logs](temp.png)
->>>>>>> c391834333df8b1c520e56c2f01a71e8e00b22f1
 -   **Session Token:** using Shared Preferences
 
 ## Architecture
