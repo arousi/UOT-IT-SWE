@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> select form</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+    function showdetails(str) {
+
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("p1").innerHTML = this.responseText;
+          document.getElementById("p1").style.color = "blue";
+          document.getElementById("p1").style.fontSize = "20px";
+        }
+      };
+      xmlhttp.open("GET", "selectwithAjax.php?q=" + str, true);
+      xmlhttp.send();
+    }
+
+  </script>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Search Data </legend>
+      <label>Type ID student you want to Search:</label>
+      <p>ID: <input type="text" id="ids" /></p>
+      <p><input type="button" value="show" onclick="showdetails(ids.value)" /></p>
+    </fieldset>
+  </form>
+  <p id="p1"></p>
+</body>
+
+</html>
