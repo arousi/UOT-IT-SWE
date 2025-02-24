@@ -86,6 +86,10 @@ The elective courses are organized by their respective colleague departments. Ma
 
  Here are some of the elective courses available:
 
+#### SWE Department:
+- `ITSE301` Prolog برمجة المنطقة
+- `ITSE303` Modelling of Complex Systems نمذجة أنظمة
+
 #### Network Department:
 -------
 - `ITNT314` - `ITSE306` تشفير
@@ -94,18 +98,19 @@ The elective courses are organized by their respective colleague departments. Ma
 #### Internet Technologies Department
 ------
 - `ITWT413` - `ITSE408` Web Application Dev in 'Java Jakrtaa'
+- `ITWT411` - `ITSE407` Web Services 
 
 #### Inoformation Systems Department
 ------
-- `ITIS404` - `ITSE302` Data Mining
+- `ITIS404` - `ITSE302` Data Mining تنقيب البيانات
+- `ITIS324` - `ITSE404` Media وسائط متعددة
+- `ITIS401` - `ITSE307` Data Scraping & Retrieval بحث و استرجاع
 
 #### Mobile Comupting Department
 ------
-- `ITMC422` - `ITSE406` Cloud Computing
+- `ITMC422` - `ITSE406` Cloud Computing حوسبة سحابية
 - `ITMC311` - `ITSE304` Cross Platform Dev in Flutter
-
-
-
+- `ITMC413` - `ITSE409` Social Networks شبكات اجتماعية
 
 
 ## How to Use This Repository
