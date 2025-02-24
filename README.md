@@ -1,5 +1,5 @@
 # Software Engineering Dept
-### Lectures and Practical, Projects and Codes of each Course
+### Lectures and Practical, Projects and Codes of each Course `Contribute!`
 
 ![Faculty of Information Tech LOGO](Faculty_logo_transp.png)
 
@@ -24,6 +24,7 @@ To graduate smoothly from the department, the following courses should be:
 
 1. Understood and become comfortable in
 2. Pass with a minimum of C
+`Contribute!`
 
 | General Course                                 | Faculty Core Course                 | Faculty Core Course 2
 | ---------------------------------------------- | ---------------------------- | --------------------
@@ -49,7 +50,7 @@ This move would also delay your graduation by 1 semester, and if we count for yo
 
 So aim to getting at least 6 Courses each sem, get the dept courses first, pass them with a B, and get a good reputation in the faculty for any future occasion.
 
-Some software and tools I recommend to know before you enroll:
+Some software and tools I recommend to know before you enroll: `Contribute!`
 1. [Figma](https://www.figma.com/) for UI/UX in HCI Course
 2. [VS Code](https://code.visualstudio.com/), for developing Java and other courses languages and frameworks
 3. [Git](https://git-scm.com/) and [GitHub](https://github.com/), as it is the main form of proving your work in most courses
@@ -84,38 +85,38 @@ Focus on passing the courses that open the `ITSE500` Course, aka `Grad Project` 
 ### Elective Courses
 The elective courses are organized by their respective colleague departments. Make sure to enroll in the highest importance core courses first, then supplement from the Electives whatever you think may benefit your future career.
 
- Here are some of the elective courses available:
-
+ Here are the elective courses available:
+`Contribute!`
 #### SWE Department:
-1. `ITSE301` Prolog برمجة المنطقة
-2. `ITSE303` Modelling of Complex Systems نمذجة أنظمة
-3. `ITSE401` Game Dev Concepts مبادئ تطوير الألعاب
+1. `ITSE301` Prolog برمجة المنطقة `Contribute!`
+2. `ITSE303` Modelling of Complex Systems نمذجة أنظمة `Contribute!`
+3. `ITSE401` Game Dev Concepts مبادئ تطوير الألعاب `Contribute!`
 
 Including thses courses that are availble at all departments:
-- `ITSE402` Free Faculty Course اختيار الكلية الحر
-- `ITSE403` Free University Course اختيار الجامعة الحر
-- `ITSE305` Chosen Topics مواضيع مختارة 
+- `ITSE402` Free Faculty Course اختيار الكلية الحر `Contribute!`
+- `ITSE403` Free University Course اختيار الجامعة الحر `Contribute!`
+- `ITSE305` Chosen Topics مواضيع مختارة  `Contribute!`
 #### Network Department:
 -------
 3. `ITNT314` - `ITSE306` تشفير
-4. `ITNT313` - `ITSE405` Network Programming -not included in repo-
+4. `ITNT313` - `ITSE405` Network Programming `Contribute!`
 
 #### Internet Technologies Department
 ------
-5. `ITWT413` - `ITSE408` Web Application Dev in 'Java Jakrtaa'
-6. `ITWT411` - `ITSE407` Web Services 
+5. `ITWT413` - `ITSE408` Web Application Dev in 'Java Jakrtaa' `Contribute!`
+6. `ITWT411` - `ITSE407` Web Services  `Contribute!`
 
 #### Inoformation Systems Department
 ------
-7. `ITIS404` - `ITSE302` Data Mining تنقيب البيانات
-8. `ITIS324` - `ITSE404` Media وسائط متعددة
-9. `ITIS401` - `ITSE307` Data Scraping & Retrieval بحث و استرجاع
+7. `ITIS404` - `ITSE302` Data Mining تنقيب البيانات `Contribute!`
+8. `ITIS324` - `ITSE404` Media وسائط متعددة `Contribute!`
+9. `ITIS401` - `ITSE307` Data Scraping & Retrieval بحث و استرجاع `Contribute!`
 
 #### Mobile Comupting Department
 ------
-10. `ITMC422` - `ITSE406` Cloud Computing حوسبة سحابية
-11. `ITMC311` - `ITSE304` Cross Platform Dev in Flutter
-12. `ITMC413` - `ITSE409` Social Networks شبكات اجتماعية
+10. `ITMC422` - `ITSE406` Cloud Computing حوسبة سحابية `Contribute!`
+11. `ITMC311` - `ITSE304` Cross Platform Dev in Flutter `Contribute!`
+12. `ITMC413` - `ITSE409` Social Networks شبكات اجتماعية `Contribute!`
 
 
 ## How to Use This Repository
