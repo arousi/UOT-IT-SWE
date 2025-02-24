@@ -1,0 +1,288 @@
+;;;;;;;;;;;;;
+;TEST CASE T23;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;Project Name ;Wbay;;Test Case Author ;Sanad alarousi;;;;;;;;
+;Priority ;Medium;;Test Case Reviewer ;;;;;;;;;
+;Description ;User Mang Test Cases;;Test Case Version;1;;;;;;;;
+;Test Objective;;;Test Execution Date;;;;;;;;;
+;;;;;;;;;;;;;
+;Test Case ID;Component;Description/Test Summary;Preconditions ;Test Steps;Input Data;Expected Results ;Actual Results;Test Environment;Execution Status ;Bug Severity;Bug Priority;Notes
+;4.1 User Management;Component;;;;;;;;;;;
+;Registration;;;;;;;;;;;;
+;Test_Case_4.1.3.REQ-1.1;Registration;Test User registration in correct conditions;"A user visits the website 
+Fills his information correctly
+Chooses Customer
+ And clicks ""Sign-Up""";"1) Input Email Correctly
+2) Input Password Correctly
+3) Choose Role:Customer
+4) Press Enter on Keyboard
+5) Check DB for the same info";"1. Email 
+2. String conforming to password Policies
+3. Role:Customer
+4. Clicks ‘Register’ w/ mouse";System displays Login-Success Dialouge then redirects user into the system AS Customer;TBD;Local Deployment;;High;;"Redirection Rout isn’t specified,
+Shall the user be redirected to
+Home page or profile?
+"
+;Test_Case_4.1.3.REQ-1.2;Registration;Test Vendor registration in correct conditions;"A Vendor visits the website 
+Fills his information correctly
+Chooses Vendor
+ And clicks ""Sign-Up""";"1) Input Email Correctly
+2) Input Password Correctly
+3) Choose Role:Vendor
+4) Press Tab then Enter on Keyboard
+5) Check DB for the same info";"1. Email 
+2. String conforming to password Policies
+3. Role:Vendor
+4. Clicks ‘Register’ w/ mouse";System displays Login-Success Dialouge then redirects user into the system AS Vendor;TBD;Local Deployment;;High;;"Redirection Rout isn’t specified,
+Shall the user be redirected to
+Home page or profile?
+"
+;Test_Case_4.1.3.REQ-1.3;Registration;Test User registration in incorrect inputs;"A user visits the website 
+Fills his information incorrectly
+Chooses Customer
+ And clicks ""Sign-Up""";"1) Input Email inCorrectly
+2) Input Password inCorrectly
+3) Choose Role:Customer
+4) Press ‘Register’ Button using mouse
+5) Check DB for the same info
+6) Check server for exception logs";"1. String 
+2. Special Charecter/Charecters not conforming  to 
+Password Policies
+3. Role:Customer
+4. Clicks ‘Register’ w/ mouse";System displays Login-Fail Dialouge then redirects user into the system AS Customer;TBD;Local Deployment;;High;;
+;Test_Case_4.1.3.REQ-1.4;Registration;Test Vendor registration in incorrect inputs;"A Vendor visits the website 
+Fills his information incorrectly
+Chooses Vendor
+ And clicks ""Sign-Up""";"1) Input Email inCorrectly
+2) Input Password inCorrectly
+3) Choose Role:Vendor
+4) Press ‘Register’ Button using mouse
+5) Check DB for the same info
+6) Check server for exception logs";"1. String 
+2. Special Charecter/Charecters not conforming  to 
+Password Policies
+3. Role:Vendor
+4. Clicks ‘Register’ w/ mouse";System displays Login-Fail Dialouge then redirects user into the system AS vendor;TBD;Local Deployment;;High;;
+;Test_Case_4.1.3.REQ-1.5;Registration;Test Registration Form immune to hostile inputs;;"1) Input Hostile Inputs into Email Field
+2) Input Normal Inputs for the rest
+3) Press Regsitration
+Do the same for all fields Iterate between Roles";"1. Conforming String
+2. Hostile Input: Code/SQL
+3. Both Roles";System warns user about such inputs and clears the fields;TBD;Local Deployment;;High;High;
+;Registration Form Validation;;;;;;;;;;;;
+;Test_Case_4.1.3.REQ-2.1;User Registration Information Validation;Validate inputs of the User Registration form;Do Test_Case_4.1.3.REQ-1.3 Pre-condition;"1) Input Email inCorrectly
+2) Input Password inCorrectly
+3) Choose Role:Customer
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. String 
+2. Special Charecter/Charecters
+3. Role:Customer
+4. Clicks ‘Register’ w/ mouse";"Error message that Both Email and Password needs to be Each in XYZ format,
+No redirectoin into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.2;Vendor Registration Information Validation;Validate inputs of the Vendor Registration form;Do Test_Case_4.1.3.REQ-1.4 Pre-condition;"1) Input Email inCorrectly
+2) Input Password inCorrectly
+3) Choose Role:Vendor
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. String 
+2. Special Charecter/Charecters
+3. Role:Vendor
+4. Clicks ‘Register’ w/ mouse";"Error message that Both Email and Password needs to be Each in XYZ format,
+No redirectoin into the system";TBD;Local Run-time Env;;Medium;;
+;Test_Case_4.1.3.REQ-2.3;User Registration Information Validation;Validate Email inputs of the Customer Registration form;Do Test_Case_4.1.3.REQ-1.3 Pre-condition;"1) Input Email inCorrectly
+2) Input Password Correctly
+3) Choose Role:Customer
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. String 
+2. String conforming to password Policies
+3. Role:Customer
+4. Clicks ‘Register’ w/ mouse";"Error message that the Email needs to be XYZ format,
+No redirectoin into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.4;Vendor Registration Information Validation;Validate Email inputs of the Vendor Registration form;Do Test_Case_4.1.3.REQ-1.4 Pre-condition;"1) Input Email inCorrectly
+2) Input Password Correctly
+3) Choose Role:Vendor
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. String 
+2. String conforming to password Policies
+3. Role:Vendor
+4. Clicks ‘Register’ w/ mouse";"Error message that the Email needs to be XYZ format,
+No redirectoin into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.5;User Registration Information Validation;Validate Password inputs of the Customer Registration form;"A Vendor visits the website 
+Fills his information correctly
+Chooses Customer
+ And clicks ""Sign-Up""";"1) Input Email Correctly
+2) Input Password inCorrectly
+3) Choose Role:Customer
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. Email 
+2. String not conforming to password Policies
+3. Role:Customer
+4. Clicks ‘Register’ w/ mouse";"Error message that the password needs to be XYZ format,
+No redirectoin into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.6;Vendor Registration Information Validation;Validate Password inputs of the Vendor Registration form;"A user visits the website 
+Fills his information incorrectly
+Chooses Vendor
+ And clicks ""Sign-Up""";"1) Input Email Correctly
+2) Input Password inCorrectly
+3) Choose Role:Vendor
+4) Press ‘Register’ Button using mouse
+5) Check server for exception logs
+6) Check for error message";"1. Email 
+2. String not conforming to password Policies
+3. Role:Vendor
+4. Clicks ‘Register’ w/ mouse";"Error message that the password needs to be XYZ format,
+No redirectoin into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.7;User Registration Information Validation;"Validate Radio Option ""Customer""";"A User visits the website 
+Fills his information correctly
+Doesn’t Choose Customer
+ And clicks ""Sign-Up""";"Do all ‘Test steps’ from 2.3 to 2.6 
+Without choosing Customer in radio
+Check error message for unselected Radio";"1. Email/String
+2. String conforming/not-conform to password Policies
+3. Role: Keep Customer Empty
+4. Clicks ‘Register’ w/ mouse";"Error Message that any of the options should be chosen, Customer radio options become red
+No redirection into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.8;Vendor Registration Information Validation;"Validate Radio Option ""Vendor"":";"A Vendor visits the website 
+Fills his information correctly
+Doesn’t Choose Vendor
+ And clicks ""Sign-Up""";"Do all ‘Test steps’ from 2.3 to 2.6 
+Without choosing Vendor in radio
+Check error message for unselected Radio";"1. Email/String
+2. String conforming/not-conform to password Policies
+3. Role: Keep Vendor Option Empty
+4. Clicks ‘Register’ w/ mouse";"Error Message that any of the options should be chosen, Vendor radio options become red
+No redirection into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.9;Registration Form Radio Validation;Validate Radio Options being detected Un-selected;"A User visits the website 
+Fills his information correctly
+Doesn’t Choose anything in Radio
+Fills the rest correctly";"Choose none in Radio, then
+ Do all ‘Test Steps’ from 2.3 to 2.6
+Check error message for unselected Radio";"1. Email/String
+2. String conforming/not-conform to password Policies
+3. Role: Keep Both Option Empty
+4. Clicks ‘Register’ w/ mouse";"Error Message that any of the options should be chosen, Both radio options become red
+No redirection into the system";TBD;Local Deployment;;Medium;;
+;Test_Case_4.1.3.REQ-2.010;Registration Form Radio Validation;Validate Radio Options being Radio and can only select each at a time;"A User visits the website 
+Fills his information correctly
+Fills the rest correctly";"Choose none in Radio, then
+ Do all ‘Test Steps’ from 2.3 to 2.6
+Then try selecting both options
+Check Error Message 
+On website and in Server Log";"1. Email/String
+2. String conforming/not-conform to password Policies
+3. Role: None
+4. Clicks ‘Register’ w/ mouse";"Error Message that any of the options should be chosen, radio become red
+No redirection into the system";TBD;Local Deployment;;Medium;;
+;;;;;;;;;;;;;
+;Password Change in Settings Page;;;;;;;;;;;;
+;Test_Case_4.1.3-REQ3.1;Customer Password Change;Validate password change form working correctly for Customer Accounts;"1)User Logged in as Customer as in 
+Test_Case_4.1.3.REQ-1.1
+";"1)Input String Conforming to Password Policy In the field
+2) Check Server for 200 mssg
+3) Check DB for password change for named Customer";"1. Email
+2. New Password
+3. Role: Customer
+4. Press Login";"Display mssg of password change correctly
+Email of the account is informed about the change";TBD;Local Deployment;;High;;
+;Test_Case_4.1.3-REQ3.2;Vendor Password Change;Validate password change form working correctly for Vendor Accounts;"1)User Logged in as Customer as in 
+Test_Case_4.1.3.REQ-1.2
+";"1)Input String Conforming to Password Policy In the field
+2) Check Server for 200 mssg
+3) Check DB for password change for named Vendor
+4) Log-out then login with new Credentials";"1. Email
+2. New Password
+3. Role: Vendor
+4. Press Login";"Display mssg of password change correctly
+Email of the account is informed about the change";TBD;Local Deployment;;High;;
+;Test_Case_4.1.3-REQ3.3;Customer Password Change;Password Change form Validates password as policy for Customer;"it shouldn’t work regardless, as the 
+Change password doesn’t include
+The validate password module
+Based on the use case diagram 4.1.4";"1)Input String not-Conforming to Password Policy In the field
+2) Check Server for 200 mssg
+3) Check DB for password change for named Customer
+4) Log-out then login with new Credentials as Customer";1. String Not conforming to Password Policy;Error;TBD;Local Deployment;;High;High;
+;Test_Case_4.1.3-REQ3.4;Vendor Password Change;Password Change form Validates password as policy for Vendor;"it shouldn’t work regardless, as the 
+Change password doesn’t include
+The validate password module
+Based on the use case diagram 4.1.4";"1)Input String not-Conforming to Password Policy In the field
+2) Check Server for 200 mssg
+3) Check DB for password change for named Vendor
+4) Log-out then login with new Credentials as Vendor";1. String Not conforming to Password Policy;Error;TBD;Local Deployment;;High;High;
+;Test_Case_4.1.3-REQ3.5;Customer Password Change;Validate system doesn’t allows login with old password for Customer;"A user visits the website 
+Fills his old credentials correctly
+Chooses Customer
+ And clicks ""login""";"1) Logout then input old password for same Customer
+2) Check Server for error log
+3) Check login page displaying error mssg of old password";"1. Email
+2. Old Password";Old password inputted, haven’t changed your password? Reset it or Contact Supp;TBD;Local Deployment;;High;High;
+;Test_Case_4.1.3-REQ3.6;Vendor Password Change;Validate system doesn’t allows login with old password for Vendor;"A user visits the website 
+Fills his old credentials correctly
+Chooses Vendor
+ And clicks ""login""";"1) Logout then input old password for same Vendor
+2) Check Server for error log
+3) Check login page displaying error mssg of old password";"1. Email
+2. Old Password";Old password inputted, haven’t changed your password? Reset it or Contact Supp;TBD;Local Deployment;;High;High;
+;Test_Case_4.1.3-REQ3.7;;;;;;;;;;;;
+;Profile Information Update;;;;;;;;;;;;
+;Test_Case_4.1.3-REQ-4.1;Customer Information update;Customer Enters , his name, contact details;"Logged in Customer
+";"1) Input Name in non-utf-8 language, contact as code/sql then
+Go to step 4
+2) input Name as String of character, Contacts as mixed String then
+Go to step 4
+3) input none then
+Go to step 4
+4) press update information";"1. None UTF-8 Characters
+2. UTF-8 Characters
+3. Code/SQL
+4. Mixed String
+5. String of Character
+6. Numbers only";"Should fail as Update Profile Information doesn’t include
+ Validation Module as per Use-Casa Diagram 4.1.4";TBD;Local Deployment;;Low;Medium;
+;Test_Case_4.1.3-REQ-4.2;Vendor Information update;Vendor Enters , his name, contact details;"Logged in Vendor
+";"1) Input Name in non-utf-8 language, contact as code/sql then
+Go to step 4
+2) input Name as String of character, Contacts as mixed String then
+Go to step 4
+3) input none then
+Go to step 4
+4) press update information";"1. None UTF-8 Characters
+2. UTF-8 Characters
+3. Code/SQL
+4. Mixed String
+5. String of Character
+6. Numbers only";"Should fail as Update Profile Information doesn’t include Validation
+ Module as per Use-Casa Diagram 4.1.5";TBD;Local Deployment;;Low;Medium;
+;Role Based Access Control to different Privileges;;;;;;;;;;;;
+;Test_Case_4.1.3-REQ-5.1;;;;;;;;;;;;
+;Administrators Terminating User Accounts;;;;;;;;;;;;
+;Test_Case_4.1.3-REQ-6.1;View Users;Administrator able to view all users together of the system;"Admin account already created
+Admin Logged in
+Admin navigates to Figure 6 UI: user mang page";"1) scroll down to the end of the list
+2) check the number of Users in the system DB
+3) do they match?";"1. Scroll w/ mouse
+2. Scroll w/ Down Button on keyboard";All users displayed;TBD;Local Deployment;;High;High;
+;Test_Case_4.1.3-REQ-6.2;Terminate Account;Administrator can terminate any account;"Admin account already created
+Admin Logged in
+Admin navigates to Figure 6 UI: user mang page";"1) Delete all accounts that are viewable
+2) Check DB for any user left
+3) Check all 3 tables, user, Customer and Vendor tables";none;"When user deleted, it should be archived, yet for this scope of work, the user regardless of his role
+Should be deleted from at least 2 tables
+Admins shouldn’t be able to delete each other";TBD;Local Deployment;;Critical;Critical;
+;Test_Case_4.1.3-REQ-6.3;View Other Admins;Administrator able to view other administrators;"Admin account already created
+Admin Logged in
+Admin navigates to Figure 6 UI: user mang page";"Not applicable, due to no table of Admins provided 
+Nor a clear method for adding or deleting and admin account";/;Only specific admins should be able to view other admins;TBD;Local Deployment;;Critical;Critical;
+;Test_Case_4.1.3-REQ-6.4;View Customers;Administrator able to view All Customers;"Admin account already created
+Admin Logged in
+Admin navigates to Figure 6 UI: user mang page";"Not applicable, due to no filter || search
+ in Figure 6 UI, since the SRS stated that there will be a search module
+It should be included in these REQs. 5.4.4 of the SRS isn’t implemented";/;Column Role w/ filter should be available in Figure 6 UI;TBD;Local Deployment;;Critical;Critical;
+;Test_Case_4.1.3-REQ-6.5;View Vendors;Administrator able to view All Vendors;"Admin account already created
+Admin Logged in
+Admin navigates to Figure 6 UI: user mang page";"Not applicable, due to no filter || search
+ in Figure 6 UI, since the SRS stated that there will be a search module
+It should be included in these REQs. 5.4.4 of the SRS isn’t implemented";/;Column Role w/ filter should be available in Figure 6 UI;TBD;Local Deployment;;Critical;Critical;
