@@ -88,8 +88,8 @@ The elective courses are organized by their respective colleague departments. Ma
 
 #### Network Department:
 -------
-- `ITNT404` - `ITSE406` Cloud Computing
 - `ITNT314` - `ITSE306` تشفير
+- `ITNT313` - `ITSE405` Network Programming -not included in repo-
 
 #### Internet Technologies Department
 ------
@@ -101,6 +101,7 @@ The elective courses are organized by their respective colleague departments. Ma
 
 #### Mobile Comupting Department
 ------
+- `ITMC422` - `ITSE406` Cloud Computing
 - `ITMC311` - `ITSE304` Cross Platform Dev in Flutter
 
 
