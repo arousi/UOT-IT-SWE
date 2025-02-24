@@ -1,0 +1,45 @@
+org 100h
+
+.data
+    prompt db 'Enter a number (0-9): $'
+    result_msg db 'The square is: $'
+    input db ?
+    result db '00$'
+
+.code
+main:
+    ; Print prompt message
+    mov dx, offset prompt
+    mov ah, 09h
+    int 21h
+
+    ; Read a character from the user (0-9)
+    mov ah, 01h
+    int 21h
+    sub al, '0'
+    mov bl, al ; store the input number in BL
+
+    ; Calculate the square of the number
+    mov al, bl
+    mul bl ; AX = AL * BL
+    
+    ; Convert result to ASCII
+    aam
+    add ax, 3030h
+    mov result[0], ah
+    mov result[1], al
+    
+    ; Print result message
+    mov dx, offset result_msg
+    mov ah, 09h
+    int 21h
+    
+    ; Print the result
+    mov dx, offset result
+    int 21h
+
+    ; Exit program
+    mov ah, 4Ch
+    int 21h
+
+end main
