@@ -130,11 +130,15 @@ git clone https://github.com/arousi/UOT-IT-SWE
 ```
 
 ## Contributing
-- add the rest of the 13/18 Elective courses to the repo
-- add whatever new content a lecterure gives, usually the syllabus is updated each year, and projects and H.Ws get changed
-- Create a `Test Bank` for the faculty
-- Suggest any improvements you may think it improves readabiltiy or accessbility or even a better styling of the `README.md`
+`Contribute!` is the keyword that there is space for contribution, earn your green squares and make good to the student community :)
+1. Add Description of each course into README.md inside of its directory
+2. add the rest of the 13/18 Elective courses to the repo
+2. Add any updated material into its course directory
+3. Add your team's project into the directory of the course
+4. Add any H.W the lecterur gives
+4. Improve the images of the `Department`
+5. Create a `Test Bank` for the each course
+6. Suggest anythin into the tab `Pull Requests`
+7. Improve any README.md contents
 
-If you would like to contribute to this repository, please fork the repository and submit a pull request with your changes. Ensure that your contributions are well-documented and follow the repository's structure.
-
-or simply contact me on Tele `t.me/Libyachampion` for guidance or inquiries :)
+or simply contact me on Tele [Sanad AlArousi on Telegram](t.me/Libyachampion) for guidance or inquiries :)
