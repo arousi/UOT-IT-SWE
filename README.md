@@ -1,9 +1,9 @@
 # Software Engineering Dept
 ### Lectures and Practical, Projects and Codes of each Course `Contribute!`
 
-![Faculty of Information Tech LOGO](Faculty_logo_transp.png)
+![Faculty of Information Tech LOGO](/Assets/img/Faculty_logo_transp.png)
 
-![Department of Software Engineering](SWE_Dept_logo_transp.png) 
+![Department of Software Engineering](/Assets/img/SWE_Dept_logo_transp.png) 
 
 ## Table of Contents
 - [Overview](#overview)
