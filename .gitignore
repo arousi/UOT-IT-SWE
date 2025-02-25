@@ -1,0 +1,49 @@
+# Ignore virtual environment directories
+venv/
+env/
+learn_AI_env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Visual Studio settings
+.vs/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.so
+*.o
+*.a
+*.out
+*.h
+*.cfg
+*.toc
+*.aux
+*.log
+*.gz
+*.toc
+
+# Ignore environment files
+*.env
+
+# Ignore library directories
+lib/
+
+# Ignore additional directories
+#Scripts/
+etc/
+share/
+
