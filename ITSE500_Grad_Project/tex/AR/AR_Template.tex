@@ -1,0 +1,129 @@
+% !TeX spellcheck = en_GB
+\documentclass[a4paper,12pt]{book}
+\usepackage{polyglossia} % Support for multiple languages
+\setmainlanguage{english} % Default language
+\setotherlanguage{arabic} % Secondary language
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\newfontfamily\arabicfont[Script=Arabic]{Simplified Arabic} % Arabic font
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{geometry}
+\geometry{
+	right=3.5cm,
+	left=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm,
+}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\thepage} 
+
+\renewcommand{\headrulewidth}{0.5pt} % Remove the header rule
+\renewcommand{\footrulewidth}{0.5pt} 
+
+\usepackage{lmodern}
+\usepackage{xcolor}
+
+% Line spacing
+\onehalfspacing
+
+% Section styles
+\titleformat{\section}
+{\normalfont\fontsize{18}{18}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\fontsize{16}{16}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{14}{14}\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+%\graphicspath{{../../../../Assets/img/}}
+
+\raggedbottom % Avoid LaTeX adding vertical space
+
+\let\cleardoublepage\clearpage
+
+\begin{document}
+	\color{black}
+	
+
+	% Cover Page (Arabic)
+	\begin{titlepage}
+		\begin{flushright}
+			\fontsize{24}{24}\selectfont\textbf{\textarabic{جامعة طرابلس}}\\[10pt]
+		\end{flushright}
+		\hfill    
+		\begin{textblock*}{3cm}(1cm,1cm)
+			\includegraphics[width=3cm]{UOT_logo_transp.png}
+		\end{textblock*}
+		\vfill
+		\begin{center}
+			\fontsize{24}{24}\selectfont\textbf{\textarabic{عنوان مشروع التخرج}}\\[20pt]
+			\fontsize{14}{14}\selectfont{\textarabic{سند العروسي \hspace*{4em} 2181801442} }\\[10pt]
+			\vfill
+			\fontsize{20}{20}\selectfont\textbf{\textarabic{بكالوريوس العلوم في تقنية المعلومات}}\\[10pt]
+			\fontsize{14}{14}\selectfont{\textarabic{الفصل الدراسي}}\\
+		\end{center}
+	\end{titlepage}
+	
+		% Title Page
+	\begin{titlepage}
+		\begin{flushleft}
+			\hfill
+			\fontsize{24}{24}\selectfont\textbf{\textarabic{جامعة طرابلس}}\\[10pt]
+			\hfill
+			\fontsize{22}{22}\selectfont\textbf{\textarabic{كلية تقنية المعلومات}}
+		\end{flushleft}
+		\hfill	
+		\begin{textblock*}{3cm}(1cm,1cm)
+			\includegraphics[width=4cm, height=4cm]{Faculty_logo_transp.png}
+		\end{textblock*}
+		\vfill
+		\begin{center}
+			\fontsize{24}{24}\selectfont\textbf{\textarabic{عنوان المشروع}}\\[20pt]			
+			\fontsize{14}{14}\selectfont{\textarabic{مشروع مقدم}}\\
+			\fontsize{14}{14}\selectfont{\textarabic{لقسم هندسة البرمجيات}}\\
+			\fontsize{14}{14}\selectfont{\textarabic{لإستيفاء المتطلبات الجزئية لنيل درجة}}\\ \fontsize{14}{14}\selectfont{\textarabic{البكالوريوس في علوم}}\\
+			\fontsize{14}{14}\selectfont{\textarabic{تقنية المعلومات}}\\[10pt]
+			\vfill
+			\fontsize{14}{14}\selectfont{\textarabic{من قبل الطالب:}}\\[10pt]
+			\fontsize{14}{14}\selectfont{\textarabic{سند العروسي \hspace*{4em} 2181801442} }\\[10pt]
+			\vfill
+			\fontsize{14}{14}\selectfont{\textarabic{بإشراف: }}\\
+			\fontsize{14}{14}\selectfont{\textarabic{الدكتور/الأستاذ/المحاضر فلان}}
+			\vfill
+			%\fontsize{20}{20}\selectfont\textbf{Bachelor of Information Technology}\\[10pt]
+			\fontsize{14}{14}\selectfont{\textarabic{الفصل الدراسي}}\\
+		\end{center}
+	\end{titlepage}
+	
+	% Table of Contents
+\renewcommand{\contentsname}{المحتويات} % Change "Contents" to Arabic
+\tableofcontents
+	
+	% Arabic Section
+	\begin{otherlanguage}{arabic}
+		\chapter{المقدمة}
+	الباب الأول
+		
+		\section{القسم الرئيسي}
+		هذا هو القسم الرئيسي من الباب الأول.
+		
+		\subsection{القسم الفرعي ١}
+		هذا هو القسم الفرعي الأول من القسم الرئيسي الأول من الباب الأول.
+		
+		\subsubsection{القسم الفرعي ٢}
+		هذا هو القسم الفرعي الثاني من القسم الفرعي.
+		
+		\subsubsection{القسم الفرعي ٣}
+		هذا هو القسم الفرعي الثالث من القسم الفرعي.
+		
+		\section{الخاتمة}
+		هذه هي باب الخاتمة.
+	\end{otherlanguage}
+	
+\end{document}

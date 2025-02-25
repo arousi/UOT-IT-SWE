@@ -1,0 +1,151 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+
+
+
+% Set margins
+\geometry{
+	left=3.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm,
+	%footnotesep=1.5cm,
+}
+
+% Set font
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% Line spacing
+\onehalfspacing
+
+% Section styles
+\titleformat{\section}
+{\normalfont\fontsize{16}{20}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\fontsize{14}{18}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{12}{16}\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\fancyfoot[R]{\thepage} 
+
+\renewcommand{\headrulewidth}{0pt} % Remove the header rule
+\renewcommand{\footrulewidth}{0pt} 
+\raggedbottom % Avoid LaTeX adding vertical space to fill out the page
+\let\cleardoublepage\clearpage
+
+
+\begin{document}
+	
+	% Cover Page
+	\begin{titlepage}
+		\begin{flushleft}
+			\fontsize{22}{22}\selectfont\textbf{University of Tripoli}\\[10pt]
+		\end{flushleft}
+			\hfill	
+			\begin{textblock*}{3cm}(16cm,1cm)
+				\includegraphics[width=3cm]{UOT_logo_transp.png}
+			\end{textblock*}
+			\vfill
+			\begin{center}
+				\fontsize{24}{24}\selectfont\textbf{Title of my grad project}\\[20pt]
+				\fontsize{14}{14}\selectfont{Sanad Alarousi \hspace*{4em} 2181801442}\\[10pt]
+				\vfill
+				\fontsize{20}{20}\selectfont\textbf{Bachelor of Information Technology}\\[10pt]
+				\fontsize{14}{14}\selectfont{Spring - 2025}\\
+			\end{center}
+	\end{titlepage}
+	
+	% Title Page
+	\begin{titlepage}
+		\begin{flushleft}
+			\fontsize{22}{22}\selectfont\textbf{University of Tripoli}\\[10pt]
+			\fontsize{20}{20}\selectfont\textbf{Faculty of Information Technology}
+		\end{flushleft}
+		\hfill	
+		\begin{textblock*}{3cm}(16cm,1cm)
+			\includegraphics[width=4cm, height=4cm]{Faculty_logo_transp.png}
+		\end{textblock*}
+		\vfill
+		\begin{center}
+			\fontsize{24}{24}\selectfont\textbf{Title of my grad project}\\[20pt]			
+			\fontsize{14}{14}\selectfont{A Report Submitted to the}\\
+			\fontsize{14}{14}\selectfont{Department of Software Engineering}\\
+			\fontsize{14}{14}\selectfont{in partial fulfilment of the requirements for the degree}\\ \fontsize{14}{14}\selectfont{Bachelor of Science}\\
+			\fontsize{14}{14}\selectfont{in}\\
+			\fontsize{14}{14}\selectfont{Information Technology }\\[10pt]
+			\vfill
+			\fontsize{14}{14}\selectfont{By}\\[10pt]
+			\fontsize{14}{14}\selectfont{Sanad Alarousi \hspace*{4em} 2181801442}\\[10pt]
+			\vfill
+			\fontsize{14}{14}\selectfont{Supervised By:}\\
+			 \fontsize{14}{14}\selectfont{Dr. X}
+			 \vfill
+			%\fontsize{20}{20}\selectfont\textbf{Bachelor of Information Technology}\\[10pt]
+			\fontsize{14}{14}\selectfont{Spring - 2025}\\
+		\end{center}
+	\end{titlepage}
+	
+	% Table of Contents
+	\tableofcontents
+	
+	% Sample Sections
+	\chapter{Introduction}
+	I am Sigma
+	\begin{figure}[h]  % 'h' places the figure approximately here
+		\centering
+x		\includegraphics[width=0.5\textwidth]{temp.jpeg}
+		\caption{Sigma Facial Vibes}
+		\label{fig:sample}
+	\end{figure}
+	
+
+	
+	\section{Main Section}
+	This is a main section.
+	
+	\subsection{Subsection 1}
+	This is the first subsection.
+	
+	\subsubsection{Subsection 2}
+	This is the second subsection.
+	
+	\subsubsection{Subsection 3}
+	This is the third subsection.
+	
+	\section{bye}
+	
+	\subsection{Sub bye bye}
+	
+	\subsection{Sub bye bye}
+	Hi
+	\subsubsection{Sub Sub bye bye .2}
+	\paragraph{
+	hi bby, how you doing?
+	}
+	
+	%\section{Conclusion}
+	%This is the conclusion.
+	
+	\chapter{Who am I}
+	this is who am i
+	
+	\section{Sanad}
+	my name, Sigma Name :)
+	\subsection{AlSedeeq}
+	my father
+	\subsubsection{AlArousi}
+	my family name
+
+\end{document}
