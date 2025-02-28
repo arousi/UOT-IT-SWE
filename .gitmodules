@@ -4,6 +4,6 @@
     url = https://github.com/arousi/Project-Flutter-Bone.git
     branch = main
 [submodule "ITSE322_Adv_Java/الحرمين ربيع 2024/ITSE322AdvJavaS24"]
-    path = "ITSE322_Adv_Java/الحرمين ربيع 2024"
+    path = "ITSE322_Adv_Java/الحرمين ربيع 2024/ITSE322AdvJavaS24"
     url = https://github.com/arousi/ITSE322AdvJavaS24
     branch = main
