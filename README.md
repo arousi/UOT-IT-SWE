@@ -122,9 +122,31 @@ Including thses courses that are availble at all departments:
 ## How to Use This Repository
 1. Navigate to the course folder you are interested in.
 2. Inside each course folder, you will find subfolders for assignments, projects, and lecture notes.
-3. Press the green Button to download it.
+3. Press the green Button to download it, or do
+4. Since total size of the repo is 2 gigs, its a good idea to clone specific directories:
+   
+  ```bash
+  git clone --no-checkout https://github.com/arousi/UOT-IT-SWE
+  ```
+ 
+  ```bash
+  cd UOT-IT-SWE
+ ```
+  
+  ```bash
+  git config core.sparseCheckout true
+ ```
+  change `<repo_name>` with directory name you want
+   ```bash
+   echo "<repo_name>/" >> .git/info/sparse-checkout
+ ```
+  
+  ```bash
+  git checkout main
+```
 
-or simply paste into the cmd the entire repo:
+
+5. or simply paste into the cmd to clone the entire repo:
 
 ```bash
 git clone https://github.com/arousi/UOT-IT-SWE
