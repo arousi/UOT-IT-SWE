@@ -1,7 +1,7 @@
 % !TeX spellcheck = en_GB
 \documentclass[a4paper,12pt]{book}
 \usepackage{polyglossia} % Support for multiple languages
-\setmainlanguage{english} % Default language
+%\setmainlanguage{english} % Default language
 \setotherlanguage{arabic} % Secondary language
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
@@ -17,7 +17,11 @@
 	top=2.5cm,
 	bottom=2.5cm,
 }
+\usepackage{tocloft}
 
+\renewcommand{\cftchapdotsep}{\cftdotsep} % Add dots for chapters
+\renewcommand{\cftsecdotsep}{\cftdotsep} % Add dots for sections
+\renewcommand{\cftsubsecdotsep}{\cftdotsep} 
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -50,8 +54,9 @@
 \begin{document}
 	\color{black}
 	
-
-	% Cover Page (Arabic)
+%===========================================================
+%Cover Page (Arabic)
+%===========================================================
 	\begin{titlepage}
 		\begin{flushright}
 			\fontsize{24}{24}\selectfont\textbf{\textarabic{جامعة طرابلس}}\\[10pt]
@@ -70,7 +75,9 @@
 		\end{center}
 	\end{titlepage}
 	
-		% Title Page
+%===========================================================
+%Title Page
+%===========================================================
 	\begin{titlepage}
 		\begin{flushleft}
 			\hfill
@@ -101,32 +108,114 @@
 		\end{center}
 	\end{titlepage}
 	
+	
+
+	
+	\begin{otherlanguage}{arabic}
+%===========================================================
+%Dedication الإهداء
+%===========================================================
+	\chapter*{الإهداء}
+	\addcontentsline{toc}{chapter}{الإهداء}
+	نص الإهداء هنا.
+
+%===========================================================
+%Akcnowledgments الشكر و التقدير
+%===========================================================
+	\chapter*{الشكر والتقدير}
+	\addcontentsline{toc}{chapter}{الشكر والتقدير}
+	نص الشكر والتقدير هنا.
+
+%===========================================================
+%AR Abstract الملخص بالعربي
+%===========================================================
+	\chapter*{الملخص بالعربية}
+	\addcontentsline{toc}{chapter}{الملخص بالعربية}
+	نص الملخص بالعربية هنا.
+\end{otherlanguage}
+
+
+%===========================================================
+%EN Abstract الملخص بالانجليزي
+%===========================================================
+	\chapter*{Abstract}
+	\begin{otherlanguage}{arabic}
+	\addcontentsline{toc}{chapter}{الملخص English in Abstract} %لازم هكي باش يقعد يمين
+\end{otherlanguage}
+	English abstract text here.
+
+\newpage
+\begin{otherlanguage}{arabic}
 	% Table of Contents
-\renewcommand{\contentsname}{المحتويات} % Change "Contents" to Arabic
-\tableofcontents
+	\renewcommand{\contentsname}{المحتويات} % Change "Contents" to Arabic
+	
+	\tableofcontents
+	
+\end{otherlanguage}
+
+%===========================================================
+%Introduction المقدمة
+%===========================================================
+	\begin{otherlanguage}{arabic}
+	
+
+%===========================================================
+%Start writing your grad documentation from here التوثيق يبدأ من هنا
+%===========================================================
+	\chapter*{المقدمة}
+	\addcontentsline{toc}{chapter}{المقدمة}
+	نص المقدمة هنا.	الباب الأول
+	
+	\section{القسم الرئيسي}
+	هذا هو القسم الرئيسي من الباب الأول.
+	\paragraph{مرحبا جميعاً انا باراقراف}
+	\subparagraph{وانا باراقراف فرعي}
+	
+	
+	\subsection{القسم الفرعي ١}
+	هذا هو القسم الفرعي الأول من القسم الرئيسي الأول من الباب الأول.
+	
+	\subsubsection{القسم الفرعي ٢}
+	هذا هو القسم الفرعي الثاني من القسم الفرعي.
+	
+	\subsubsection{القسم الفرعي ٣}
+	هذا هو القسم الفرعي الثالث من القسم الفرعي.
+	
+	
+	%chapters
+	%sections
+	
+%===========================================================
+%EoDocumentation نهاية التوثيق
+%===========================================================
+	\chapter*{الخاتمة}
+	\addcontentsline{toc}{chapter}{الخاتمة}
+	نص الخاتمة هنا.
+	
+%===========================================================
+%References المراجع
+%===========================================================
+	\chapter*{المراجع}
+	\addcontentsline{toc}{chapter}{المراجع}
+	صفحة المراجع
+	
+	\begin{thebibliography}{9}
+		\addcontentsline{toc}{chapter}{المصادر}
+		\bibitem{ref1} مرجع 1
+		\bibitem{ref1} مرجع 2
+		\bibitem{ref1} مرجع 3
+	\end{thebibliography}
+	 
+%===========================================================
+%Appendices الملاحق
+%===========================================================
+	\chapter*{الملاحق}
+	\addcontentsline{toc}{chapter}{الملاحق}
+	نص الملاحق هنا.
+	
 	
 	% Arabic Section
-	\begin{otherlanguage}{arabic}
-		\chapter{المقدمة}
-	الباب الأول
-		
-		\section{القسم الرئيسي}
-		هذا هو القسم الرئيسي من الباب الأول.
-		\paragraph{مرحبا جميعاً انا باراقراف}
-		\subparagraph{وانا باراقراف فرعي}
-
-		
-		\subsection{القسم الفرعي ١}
-		هذا هو القسم الفرعي الأول من القسم الرئيسي الأول من الباب الأول.
-		
-		\subsubsection{القسم الفرعي ٢}
-		هذا هو القسم الفرعي الثاني من القسم الفرعي.
-		
-		\subsubsection{القسم الفرعي ٣}
-		هذا هو القسم الفرعي الثالث من القسم الفرعي.
-		
-		\section{الخاتمة}
-		هذه هي باب الخاتمة.
+	
 	\end{otherlanguage}
 	
 \end{document}
