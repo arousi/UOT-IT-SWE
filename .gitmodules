@@ -1,6 +1,6 @@
 
-[submodule "Elective/Mobile Computing/ITMC311 - ITSE304 Cross Platform Dev in Flutter/project_flutter_bone"]
-    path = Elective/Mobile Computing/ITMC311 - ITSE304 Cross Platform Dev in Flutter/project_flutter_bone
+[submodule "Elective/Mobile-Computing/ITMC311 - ITSE304 Cross Platform Dev in Flutter/project_flutter_bone"]
+    path = Elective/Mobile-Computing/ITMC311 - ITSE304 Cross Platform Dev in Flutter/project_flutter_bone
     url = https://github.com/arousi/Project-Flutter-Bone.git
     branch = main
 [submodule "ITSE322_Adv_Java/الحرمين ربيع 2024/ITSE322AdvJavaS24"]
