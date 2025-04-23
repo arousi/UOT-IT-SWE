@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"b7b1d4747a63d95e","x":-360,"y":-160,"width":320,"height":320,"type":"text","text":""},
-		{"id":"026710fc6f10ce76","x":40,"y":-300,"width":400,"height":400,"type":"file","file":"Sheet 2 Data Mining.md"}
-	],
-	"edges":[]
-}
