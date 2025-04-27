@@ -1,0 +1,1 @@
+# This file serves as documentation for the assets directory, which may contain images, fonts, or other media files.
