@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			//Multi root if your files are not grouped together
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/dist": true
+    }
+	},
+	"extensions": {
+		"recommendations": [
+			"aaron-bond.better-comments",
+			"adpyke.codesnap",
+			"mhutchie.git-graph",
+			"ms-vsliveshare.vsliveshare",
+			"PKief.material-icon-theme",
+		]
+		
+	}
+
+}
